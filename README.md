@@ -1,2 +1,2 @@
 # sellerOnboardForm
-Project that showcases a sample form of ask questions before displaying results
+Project that showcases a sample form asking questions on different pages before displaying results
