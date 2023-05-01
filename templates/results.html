@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Results</title>
+</head>
+
+<body>
+    <h1>Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Store Name</th>
+                <th>Balance</th>
+                <th>Price</th>
+                <th>Network</th>
+                <th>Address</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in form_data %}
+            <tr>
+                <td>{{ entry['store_name'] }}</td>
+                <td>{{ entry['balance'] }}</td>
+                <td>{{ entry['price'] }}</td>
+                <td>{{ entry['network'] }}</td>
+                <td>{{ entry['address'] }}</td>
+                <td>{{ entry['email'] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="{{ url_for('onboarding_form') }}">Submit another entry</a>
+</body>
+
+</html>
